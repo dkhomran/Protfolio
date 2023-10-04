@@ -1,0 +1,29 @@
+.blogpost-Details {
+  margin-bottom: 60px;
+}
+
+.testimonials {
+  margin-bottom: 60px;
+}
+.alert {
+  padding: 15px;
+  margin: 20px;
+  border-radius: 15px;
+  border: 1px solid white;
+}
+
+.alert-success {
+  color: #3c763d;
+}
+
+.alert-error {
+  color: #a94442;
+}
+
+.alert-warning {
+  color: #8a6d3b;
+}
+
+.alert-info {
+  color: #31708f;
+}

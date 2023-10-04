@@ -1,0 +1,25 @@
+{# - certificates #}
+
+
+<section class="certificates">
+	<h3 class="h3 certificate-title">My certificates</h3>
+
+	<ul class="certificate-list has-scrollbar">
+{#		{% for certificate in certificates %}#}
+{#			<li class="certificate-item">#}
+{#				<span>#}
+{#					{% if certificate.file %}#}
+{#						<img src="{{ vich_uploader_asset(certificate, 'imageFile') }}" alt="{{ certificate.title }}" style="border-radius: 10px">#}
+{#					{% else %}#}
+{#						<p>No image available</p>#}
+{#					{% endif %}#}
+{#				</span>#}
+{#			</li>#}
+{#		{% endfor %}#}
+	</ul>
+
+	<div class="popup-image">
+		<span>&times;</span>
+		<img src="" alt=""/>
+	</div>
+</section>

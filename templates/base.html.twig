@@ -1,16 +1,79 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
+        <title>
+            {% block title %}Welcome!
+            {% endblock %}
+        </title>
+        <meta charset="UTF-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+        <meta
+                name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+
+        {# - favicon #}
+        <link
+                rel="shortcut icon" href="{{ asset('assets/images/logo.ico') }}" type="image/x-icon"/>
+
+
+        {# - font Awesome #}
+        <link
+                rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+
+
+        {# - google font link #}
+        <link rel="preconnect" href="https://fonts.googleapis.com"/>
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+
         {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}"/>
         {% endblock %}
 
-        {% block javascripts %}
-        {% endblock %}
     </head>
     <body>
-        {% block body %}{% endblock %}
+        <main>
+            {# - #SIDEBAR #}
+            {% include "_partials/_aside.html.twig" %}
+
+            <div
+                    class="main-content ocean">
+                {# animation bubbles water #}
+                <div id="octocat"></div>
+                <div class="bubble bubble--1"></div>
+                <div class="bubble bubble--2"></div>
+                <div class="bubble bubble--3"></div>
+                <div class="bubble bubble--3"></div>
+                <div class="bubble bubble--4"></div>
+                <div class="bubble bubble--5"></div>
+                <div class="bubble bubble--6"></div>
+                <div class="bubble bubble--7"></div>
+                <div class="bubble bubble--8"></div>
+                <div class="bubble bubble--8"></div>
+                <div class="bubble bubble--9"></div>
+                <div class="bubble bubble--10"></div>
+                <div class="bubble bubble--11"></div>
+                <div class="bubble bubble--11"></div>
+                {# - #NAVBAR #}
+                {% include "_partials/_navbar.html.twig" %}
+
+                {# Var Content #}
+                {% block body %}{% endblock %}
+            </div>
+
+        </main>
+
+
+    {# - ionicon link #}
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+    {% block javascripts %}
+        <script src='{{ asset('assets/js/script.js') }}'></script>
+    {% endblock %}
     </body>
+
 </html>
+

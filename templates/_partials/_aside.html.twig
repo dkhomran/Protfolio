@@ -1,0 +1,109 @@
+<aside class="sidebar" data-sidebar>
+	<div class="sidebar-info">
+		<figure class="avatar-box">
+{#			{% if about[0].file %}#}
+{#				<img src="{{ vich_uploader_asset( about[0] , 'imageFile') }}" alt="Dekhil Omran" width="80" style="border-radius: 15px"/>#}
+{#			{% else %}#}
+{#				<p>No image available</p>#}
+{#			{% endif %}#}
+		</figure>
+
+		<div class="info-content">
+			<h1 class="name" title="Dekhil Omran">dekhil omran</h1>
+
+			<!-- type headline start-->
+			<div class="title-animation title">
+				<h3 class="animate-charcter isHiddenTitle" title-animated-about>
+					job
+				</h3>
+				<h3 class="animate-charcter isVisibleTitle" title-animated-about>
+					Web Designer
+				</h3>
+			</div>
+			<!-- type headline end -->
+		</div>
+
+		<button class="info_more-btn" data-sidebar-btn>
+			<span>Show Contacts</span>
+
+			<ion-icon name="chevron-down"></ion-icon>
+		</button>
+	</div>
+
+	<div class="sidebar-info_more">
+		<div class="separator"></div>
+
+		<ul class="contacts-list">
+			<li class="contact-item">
+				<div class="icon-box">
+					<ion-icon name="mail-outline"></ion-icon>
+				</div>
+
+				<div class="contact-info">
+					<p class="contact-title">Email</p>
+
+					<a href="mailto:Dkhomran22@gmail.com" class="contact-link">omran@omran.com</a>
+				</div>
+			</li>
+
+			<li class="contact-item">
+				<div class="icon-box">
+					<ion-icon name="phone-portrait-outline"></ion-icon>
+				</div>
+
+				<div class="contact-info">
+					<p class="contact-title">Phone</p>
+
+					<a href="tel:+21628085788" class="contact-link">+216
+						22334455</a>
+				</div>
+			</li>
+
+			<li class="contact-item">
+				<div class="icon-box">
+					<ion-icon name="calendar-outline"></ion-icon>
+				</div>
+
+				<div class="contact-info">
+					<p class="contact-title">Birthday</p>
+
+					<time datetime="1999-04-10">22/33/555</time>
+				</div>
+			</li>
+
+			<li class="contact-item">
+				<div class="icon-box">
+					<ion-icon name="location-outline"></ion-icon>
+				</div>
+
+				<div class="contact-info">
+					<p class="contact-title">Location</p>
+
+					<address>ariana</address>
+				</div>
+			</li>
+		</ul>
+
+		<div class="separator"></div>
+
+		<ul class="social-list">
+			<li class="social-item">
+				<a href="" class=" social-link" target=" _blank">
+					<ion-icon name="logo-github"></ion-icon>
+				</a>
+			</li>
+
+			<li class="social-item">
+				<a href="" class="social-link" target="_blank">
+					<ion-icon name="logo-facebook"></ion-icon>
+				</a>
+			</li>
+
+			<li class="social-item">
+				<a href="" target="_blank" class="social-link">
+					<ion-icon name="logo-linkedin"></ion-icon>
+				</a>
+			</li>
+		</ul>
+	</div>
+</aside>
