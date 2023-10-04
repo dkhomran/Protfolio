@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Dekhil Omran | Portfolio
+{% endblock %}
+
+{% block body %}
+
+    <article class="about active" data-page="about">
+        <header>
+            <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+            <p class="isHiddenTitle" id="getDescription">
+                description lorem lorem
+            </p>
+            <p id="typedtext"></p>
+        </section>
+
+
+        {# - services #}
+        {% include "home/services.html.twig" %}
+
+
+        {# - Education #}
+        {% include "home/education.html.twig" %}
+
+
+        {# - My skills #}
+        {% include "home/skills.html.twig" %}
+
+
+        {# - certificates #}
+        {% include "home/certificates.html.twig" %}
+
+
+    </article>
+{% endblock %}
+{% block javascripts %}
+    {{ parent() }}
+    <script src='{{ asset('assets/js/home.js') }}'></script>
+{% endblock %}
